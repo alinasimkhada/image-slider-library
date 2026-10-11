@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive image slider built with HTML, CSS, and vanilla JavaScript.">
+    <title>Image Slider Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+</head>
+<body>
+    <header class="page-header">
+        <p class="eyebrow">Vanilla JavaScript Project</p>
+        <h1>Image Slider Library</h1>
+        <p>Explore beautiful places around the world.</p>
+    </header>
+
+    <main class="container">
+        <section class="slider-section" aria-label="Image gallery">
+            <div class="slider-viewport" id="sliderViewport">
+                <div class="slide-track" id="slideTrack">
+                    <div class="slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85"
+                            alt="Sunlight over a beautiful mountain landscape">
+                        <div class="slide-caption">
+                            <span>01 / NATURE</span>
+                            <h2>Find Your Peace</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=85"
+                            alt="Snow-covered mountain beneath a starry sky">
+                        <div class="slide-caption">
+                            <span>02 / MOUNTAINS</span>
+                            <h2>Reach New Heights</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85"
+                            alt="Ocean waves moving toward the shore">
+                        <div class="slide-caption">
+                            <span>03 / OCEAN</span>
+                            <h2>Follow the Waves</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85"
+                            alt="Peaceful lake surrounded by mountains">
+                        <div class="slide-caption">
+                            <span>04 / TRAVEL</span>
+                            <h2>Discover Somewhere New</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    class="slider-arrow previous"
+                    id="previousButton"
+                    type="button"
+                    aria-label="Previous image">
+                    <span aria-hidden="true">&#10094;</span>
+                    <span>Previous</span>
+                </button>
+
+                <button
+                    class="slider-arrow next"
+                    id="nextButton"
+                    type="button"
+                    aria-label="Next image">
+                    <span>Next</span>
+                    <span aria-hidden="true">&#10095;</span>
+                </button>
+
+                <div class="slide-counter" id="slideCounter" aria-live="polite">
+                    01 / 04
+                </div>
+            </div>
+
+            <div
+                class="slider-dots"
+                id="sliderDots"
+                role="group"
+                aria-label="Choose an image">
+            </div>
+
+            <p class="slider-help">
+                Use Previous, Next, or the dots to explore the images.
+            </p>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Built with HTML, CSS and JavaScript</p>
+    </footer>
+</body>
+</html>
